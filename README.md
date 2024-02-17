@@ -4,6 +4,7 @@
 
 Ответ:
 1. Авторизация
+
 ![Авторизация](https://github.com/Lex-Chaos/zabbix-hw/blob/main/img/Authorization.png)
 
 2. Команды
@@ -49,14 +50,17 @@ systemctl status apache2
 Ответ:
 
 1. Хосты доступны
+
 ![Хосты доступны](https://github.com/Lex-Chaos/zabbix-hw/blob/main/img/02-Hosts_richble.png)
 
 2. Логи агентов
+
 ![Лог агента 1](https://github.com/Lex-Chaos/zabbix-hw/blob/main/img/03-Log(agent1).png)
 
 ![Лог агента 2](https://github.com/Lex-Chaos/zabbix-hw/blob/main/img/04-Log(agent2).png)
 
 3. Последние данные
+
 ![Последние данные](https://github.com/Lex-Chaos/zabbix-hw/blob/main/img/05-Latest_data.png)
 
 4. Команды
