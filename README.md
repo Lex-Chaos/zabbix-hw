@@ -81,7 +81,7 @@ systemctl enable zabbix-agent
 systemctl status zabbix-agent
 
 # Правлю конфиг
-sed -i 's/Server=127.0.0.1/Server=192.168.0.138'/g' /etc/zabbix/zabbix_server.conf
+sed -i 's/Server=127.0.0.1/Server=192.168.0.138'/g' /etc/zabbix/zabbix_agentd.conf
 ```
 ---
 
