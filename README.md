@@ -4,7 +4,6 @@
 
 Ответ:
 1. Авторизация
-
 ![Авторизация](https://github.com/Lex-Chaos/zabbix-hw/blob/main/img/Authorization.png)
 
 2. Команды
