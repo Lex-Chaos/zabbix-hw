@@ -6,7 +6,7 @@
 1. Авторизация
 ![Авторизация](https://github.com/Lex-Chaos/zabbix-hw/blob/main/img/Authorization.png)
 
-2.
+2. Команды
 ```
 # Устанавливаю PostgreSQL
 apt install postgresql
@@ -48,12 +48,43 @@ systemctl status apache2
 
 Ответ:
 
+1. Хосты доступны
+![Хосты доступны](https://github.com/Lex-Chaos/zabbix-hw/blob/main/img/02-Hosts_richble.png)
+
+2. Логи агентов
+![Лог агента 1](https://github.com/Lex-Chaos/zabbix-hw/blob/main/img/03-Log(agent1))
+
+![Лог агента 2](https://github.com/Lex-Chaos/zabbix-hw/blob/main/img/04-Log(agent2))
+
+3. Последние данные
+![Последние данные](https://github.com/Lex-Chaos/zabbix-hw/blob/main/img/05-Latest_data)
+
+4. Команды
+
+```
+# Устанавливаю репозиторий Zabbix
+wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.0-4+ubuntu22.04_all.deb
+
+dpkg -i zabbix-release_6.0-4+ubuntu22.04_all.deb
+
+apt update
+
+# Устанавливаю Zabbix агент
+apt install zabbix-agent
+
+# Запускаю Zabbix агент
+systemctl restart zabbix-agent
+
+systemctl enable zabbix-agent
+
+# Проверяю Zabbix агент
+systemctl status zabbix-agent
+
+# Правлю конфиг
+sed -i 's/Server=127.0.0.1/Server=192.168.0.138'/g' /etc/zabbix/zabbix_server.conf
+```
 ---
 
-### Задание 3
-
-Ответ:
-
-### Задание 4*
+### Задание 3*
 
 Ответ:
